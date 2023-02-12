@@ -2,8 +2,11 @@
   .container {
     max-width: 428px;
   }
-  /* .container.container-mini {
+  .container-mini {
     max-width: 290px;
   }
-   */
+
+  .hero{
+    background-image: url(../images/Dark-bg.png), url(../images/tablet-image.jpg);
+  }
 }

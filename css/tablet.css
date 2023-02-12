@@ -2,14 +2,16 @@
   .container {
     max-width: 768px;
   }
-  .container.container-mini {
+
+  .container-mini,
+  .customers-mini {
     max-width: 582px;
   }
   .hero {
     padding-top: 112px;
     padding-bottom: 108px;
     background-image: url(../images/Dark-bg.png),
-      url(../images/tablet-image.jpg);
+      url(../images/hero-img.jpg);
     min-width: 768px;
   }
 
