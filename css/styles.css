@@ -94,6 +94,7 @@ ul {
 }
 
 .page-header {
+  /* position: relative; */
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
@@ -149,6 +150,19 @@ ul {
   gap: 40px;
 }
 
+.menu-hamburger {
+  stroke: #2e2f42;
+}
+.menu-button {
+  border: none;
+  background-color: inherit;
+}
+
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
+}
 /* ======================= HERO ====================== */
 
 .hero {
