@@ -10,8 +10,7 @@
   .hero {
     padding-top: 112px;
     padding-bottom: 108px;
-    background-image: url(../images/Dark-bg.png),
-      url(../images/hero-img.jpg);
+    background-image: url(../images/Dark-bg.png), url(../images/hero-img.jpg);
     min-width: 768px;
   }
 
@@ -41,5 +40,23 @@
   }
   .customers-item {
     width: calc((100% - 48px) / 3);
+  }
+  .footer-logo {
+    justify-content: start;
+  }
+  .footer-container {
+    margin-left: 108px;
+    margin-right: 24px;
+  }
+  .social-container {
+    margin-left: 0;
+  }
+  .subscribe-container {
+    text-align: left;
+    margin-left: 108px;
+  }
+  .subscribe-input {
+    width: 264px;
+    margin-right: 24px;
   }
 }

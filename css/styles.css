@@ -255,6 +255,13 @@ btn:focus {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .menu,
+  .address-menu {
+    display: none;
+  }
+}
+
 /*================== ABOUT ================== */
 
 .about {
@@ -438,8 +445,6 @@ btn:focus {
 /*================== FOOTER ================== */
 .footer {
   background: #2e2f42;
-  /* margin-top: 96px;
-  margin-bottom: 96px; */
   margin: 0 auto;
 }
 
@@ -451,7 +456,7 @@ btn:focus {
 }
 
 .footer-description {
-  max-width: 264px;
+  max-width: 268px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -485,9 +490,7 @@ btn:focus {
 }
 
 .social-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -833,13 +836,11 @@ btn:focus {
 /* =============== SUBSCRIBE ============== */
 
 .subscribe-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-.subscribe {
+.subscribe-text {
   color: #ffffff;
   font-family: var(--primary-font);
   font-weight: 500;
@@ -852,6 +853,7 @@ btn:focus {
   font-family: var(--primary-font);
   font-weight: 500;
   line-height: 1.5;
+  height: 40px;
   display: flex;
   padding: 8px 24px;
   gap: 16px;

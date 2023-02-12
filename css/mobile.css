@@ -9,4 +9,8 @@
   .hero{
     background-image: url(../images/Dark-bg.png), url(../images/tablet-image.jpg);
   }
+
+  .subscribe-input{
+    width:396px;
+  }
 }

@@ -58,4 +58,23 @@
   .customers-item {
     width: calc((100% - 120px) / 6);
   }
+  .footer-flex {
+    flex-wrap: nowrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .subscribe-container {
+    margin-left: 80px;
+  }
+  .email-input {
+    flex-wrap: nowrap;
+  }
+  .footer-container {
+    margin-left: 0;
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+  .social-container{
+    margin-bottom: 0;
+  }
 }
