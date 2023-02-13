@@ -20,9 +20,9 @@
   }
 
   .modal {
-    width:408px;
+    width: 408px;
   }
-  
+
   .active::after {
     position: absolute;
     content: "";
@@ -35,14 +35,18 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../images/desktop-bg.png),
-      url(../images/hero-img-2x.jpg);
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/desktop-bg.png),
+        url(../images/hero-img-2x.jpg);
+    }
   }
-}
-
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
   .address-menu {
     display: inline-block;
     font-size: 12px;

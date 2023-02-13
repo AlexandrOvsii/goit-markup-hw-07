@@ -118,22 +118,6 @@ ul {
 }
 
 
-/* .active {
-  position: relative;
-  color: #404bbf;
-}
-
-.active::after {
-  position: absolute;
-  content: "";
-  background: #404bbf;
-  border-radius: 2px;
-  height: 4px;
-  width: 100%;
-  bottom: -28px;
-  left: 0;
-} */
-
 .address-link {
   font-style: normal;
   color: var(--primary-font-color);
@@ -208,11 +192,7 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-icon-x {
-}
-.mob-menu-list {
 
-}
 .mob-menu-item:not(:last-child) {
 margin-bottom: 40px;
 }
@@ -225,8 +205,7 @@ margin-bottom: 40px;
   color: #2E2F42;
   gap: 40px;
 }
-.active {
-}
+
 .mob-address-menu {
   margin-bottom: 48px;
 }
@@ -259,10 +238,6 @@ color: #4D5AE5;
 margin-bottom: 40px;
 }
 
-.team-soc-link {
-}
-.team-soc-icon {
-}
 
 @media screen and (min-width: 428px) {
   .mob-soc-list {
@@ -297,11 +272,11 @@ margin-bottom: 40px;
   }
 .hero-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.11;
   color: #ffffff;
   letter-spacing: 0.02em;
-  max-width: 319px;
+  max-width: 320px;
   display: flex;
   margin: 0 auto;
   margin-bottom: 72px;
