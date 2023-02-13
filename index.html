@@ -57,11 +57,79 @@
             </li>
           </ul>
         </address>
-        <button class="menu-button">
+        <button type="button" class="menu-button" data-menu-open>
           <svg class="menu-hamburger" width="32" height="22">
             <use href="./images/icons.svg#menu-hamburger"></use>
           </svg>
         </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container container">
+          <div>
+            <button class="menu-close-button" data-menu-close>
+              <svg class="modal-icon-x" width="8" height="8">
+                <use href="./images/icons.svg#icon-x"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link active" href="./index.html">Studio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a class="mob-menu-link link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <ul class="mob-address-menu list">
+              <li class="mob-tel-item">
+                <a class="mob-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mob-address-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="team-soc-link link">
+                  <svg class="team-soc-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -136,6 +204,7 @@
           <ul class="about-list list">
             <li class="about-img">
               <img
+                srcset="./images/computer.jpg 1x, ./images/computer-2x.jpg 2x"
                 src="./images/computer.jpg"
                 alt="computer"
                 width="360"
@@ -144,6 +213,10 @@
             </li>
             <li class="about-img">
               <img
+                srcset="
+                  ./images/mobile-messenger.jpg    1x,
+                  ./images/mobile-messenger-2x.jpg 2x
+                "
                 src="./images/mobile-messenger.jpg"
                 alt="mobile-messenger"
                 width="360"
@@ -152,6 +225,10 @@
             </li>
             <li class="about-img">
               <img
+                srcset="
+                  ./images/mobile-with-laptop.jpg  1x,
+                  images/mobile-with-laptop-2x.jpg 2x
+                "
                 src="./images/mobile-with-laptop.jpg"
                 alt="mobile-with-laptop"
                 width="360"
@@ -168,6 +245,10 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/mark-guerrero.jpg  1x,
+                  images/mark-guerrero-2x.jpg 2x
+                "
                 src="./images/mark-guerrero.jpg"
                 alt="mark-guerrero"
                 width="264"
@@ -210,6 +291,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/tom-ford.jpg 1x, images/tom-ford-2x.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="tom-ford"
                 width="264"
@@ -252,6 +334,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/camilla-garcia.jpg    1x,
+                  ./images/camilla-garcia-2x.jpg 2x
+                "
                 src="./images/camilla-garcia.jpg"
                 alt="camilla-garcia"
                 width="264"
@@ -294,6 +380,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/daniel-wilson.jpg  1x,
+                  images/daniel-wilson-2x.jpg 2x
+                "
                 src="./images/daniel-wilson.jpg"
                 alt="daniel-wilson"
                 width="264"
@@ -453,7 +543,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-button" data-modal-close>
           <svg class="modal-icon-x" width="8" height="8">
@@ -515,7 +605,8 @@
           <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

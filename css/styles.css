@@ -64,6 +64,10 @@ ul {
   margin: -1px;
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 /* ======================= HEADER ====================== */
 .cite-logo {
   font-family: var(--seconday-font);
@@ -108,11 +112,13 @@ ul {
   font-weight: 500;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  line-height: 1.5;
   padding-top: 24px;
   transition: var(--tra);
 }
 
-.active {
+
+/* .active {
   position: relative;
   color: #404bbf;
 }
@@ -126,7 +132,7 @@ ul {
   width: 100%;
   bottom: -28px;
   left: 0;
-}
+} */
 
 .address-link {
   font-style: normal;
@@ -158,6 +164,113 @@ ul {
   background-color: inherit;
 }
 
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
+
+.mob-container.container{
+  padding-left: 40px;
+}
+
+.mob-menu > .container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+.menu-close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: block;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon-x {
+}
+.mob-menu-list {
+
+}
+.mob-menu-item:not(:last-child) {
+margin-bottom: 40px;
+}
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2E2F42;
+  gap: 40px;
+}
+.active {
+}
+.mob-address-menu {
+  margin-bottom: 48px;
+}
+.mob-address-link {
+  font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #434455;
+}
+
+.mob-tel-link {
+  font-weight: 600;
+font-size: 27px;
+line-height: 1.11;
+text-transform: capitalize;
+color: #4D5AE5;
+}
+.mob-soc-list {
+  display: flex;
+  margin-bottom: 40px;
+  gap: 26px;
+}
+.mob-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-tel-item{
+margin-bottom: 40px;
+}
+
+.team-soc-link {
+}
+.team-soc-icon {
+}
+
+@media screen and (min-width: 428px) {
+  .mob-soc-list {
+    gap: 54px;
+  }
+}
+
+
 @media screen and (min-width: 767px) {
   .menu-button {
     display: none;
@@ -175,6 +288,13 @@ ul {
   background-image: url(../images/Dark-bg.png), url(../images/mobile-image.jpg);
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/Dark-bg.png), url(../images/mobile-image-2x.jpg);
+  }
+  }
 .hero-title {
   font-weight: 700;
   font-size: 36px;
@@ -668,8 +788,8 @@ btn:focus {
 }
 .modal {
   position: absolute;
-  width: 408px;
-  min-height: 576px;
+  width: 300px;
+  min-height: 586px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -728,7 +848,7 @@ btn:focus {
 .modal-text {
   font-family: var(--primary-font);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 11px;
   line-height: calc(24 / 16);
   text-align: center;
   letter-spacing: 0.02em;
@@ -814,7 +934,7 @@ btn:focus {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;

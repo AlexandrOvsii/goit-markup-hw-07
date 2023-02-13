@@ -6,11 +6,36 @@
     max-width: 290px;
   }
 
-  .hero{
-    background-image: url(../images/Dark-bg.png), url(../images/tablet-image.jpg);
+  .hero {
+    background-image: url(../images/Dark-bg.png),
+      url(../images/tablet-image.jpg);
   }
 
-  .subscribe-input{
-    width:396px;
+  .subscribe-input {
+    width: 396px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/Dark-bg.png),
+        url(../images/tablet-image-2x.jpg);
+    }
+  }
+  .mob-tel-link {
+    font-size: 36px;
+  }
+
+  .check-text{
+    font-size: 12px;
+  }
+
+  .modal{
+    width: 392px;
+  }
+
+  .modal-text{
+    font-size: 16px;
   }
 }
