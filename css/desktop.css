@@ -28,8 +28,8 @@
   }
 
   .benefits {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .benefits-title {
     font-weight: 500;
@@ -49,6 +49,11 @@
     flex-basis: calc((100% - 24px) / 4);
   }
 
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .team-item {
     flex-basis: calc((100% - 72px) / 4);
   }
@@ -65,10 +70,13 @@
   .customers-item {
     width: calc((100% - 120px) / 6);
   }
-  .footer-flex {
-    flex-wrap: nowrap;
+  .footer {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .footer-flex {
+    flex-wrap: nowrap;
   }
   .subscribe-container {
     margin-left: 80px;

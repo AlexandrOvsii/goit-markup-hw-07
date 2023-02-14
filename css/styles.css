@@ -328,8 +328,8 @@ btn:focus {
 }
 
 .benefits {
-  margin-top: 96px;
-  margin-bottom: 92px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .benefits-list {
@@ -371,7 +371,6 @@ btn:focus {
 /*================== ABOUT ================== */
 
 .about {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -398,6 +397,7 @@ btn:focus {
 @media screen and (max-width: 1199px) {
   .about {
     display: none;
+    padding-bottom: 120px;
   }
 }
 
@@ -552,6 +552,8 @@ btn:focus {
 .footer {
   background: #2e2f42;
   margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-container {
@@ -636,8 +638,6 @@ btn:focus {
 .footer-flex {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 /*================== PORTFOLIO ================== */

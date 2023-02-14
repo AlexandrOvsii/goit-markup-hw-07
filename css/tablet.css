@@ -53,6 +53,9 @@
     line-height: 1.33;
     letter-spacing: 0.04em;
   }
+  .benefits-title {
+    text-align: left;
+  }
 
   .benefits-list {
     row-gap: 72px;
@@ -61,6 +64,11 @@
   }
   .benefits-item {
     flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .team {
+    padding-top: 96px;
+    padding-bottom: 104px;
   }
 
   .team-item {
@@ -90,6 +98,7 @@
     margin-right: 24px;
   }
   .social-container {
+    text-align: left;
     margin-left: 0;
   }
   .subscribe-container {
@@ -119,7 +128,6 @@
   }
   .portfolio-item {
     width: calc((100% - 48px) / 2);
-    
   }
   .portfolio-list {
     column-gap: 24px;
