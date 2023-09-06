@@ -58,7 +58,7 @@
     flex-basis: calc((100% - 72px) / 4);
   }
   .team-list {
-    flex-wrap: nowrap;
+    flex-wrap: no wrap;
   }
   .customers {
     padding-top: 120px;

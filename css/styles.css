@@ -250,7 +250,6 @@ ul {
 /* ======================= HERO ====================== */
 
 .hero {
-  background: #2e2f42;
   padding-top: 112px;
   padding-bottom: 112px;
   max-width: 100%;
@@ -439,8 +438,8 @@ btn:focus {
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 72px;
+  flex-wrap: wrap;
 }
 
 .team-item {
